@@ -1,6 +1,6 @@
 <meta charset="utf-8" emacsmode="-*- markdown -*-">
 <link rel="stylesheet" href="apiDSBCN.css">
-<link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/apidoc.css?">
+<link rel="stylesheet" href="apidoc.css?">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -8,20 +8,21 @@
 <link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
 <head>
 <style>
-<style>
-    .material-icons, .icon-text {
+.material-icons, .icon-text {
       vertical-align: bottom;
     }
-
+.center {
+  padding: 30px 0;
+}
 </style>
 </head>
 
 
 <center> 
-<p style="font-size:12px; font-family: 'Carrois Gothic SC'; color:blue"; line-height: 1.0rem>
+<p style="font-size:12px; font-family: 'Carrois Gothic SC'; color:grey"; line-height: 1.0rem>
 <b> Ethical Data Science Course v1.0 </b><br>
-Universitat de Barcelona, 2020 <br>
-Jordi Vitrià</p>
+Jordi Vitrià, Universitat de Barcelona, 2020 <br>
+</p>
 </center>
 
 
@@ -82,6 +83,8 @@ Hola que tal <a onclick="document.getElementById('id01').style.display='block'" 
       conclick=""document.getElementById('id01').style.display='block'"" 
       lass="w3-button w3-display-topright">&times;
 </span>
+
+
 # Hola 
 Una possible implementació de l'exponenciació, $x^y$, pot ser aquesta: 
 
@@ -312,18 +315,26 @@ And other admonitions:
 The table of contents that Markdeep produces is stuffed on the right side, 
 if the browser window is wide enough. Otherwise it is hidden.
 
-<hr>
-<div id="textbox">
-  <p class="alignleft">[Previous Page](deep2.html)</p>
-  <p class="alignright">[Next Page](deep2.html)</p>
+
+<br>
+<div class="center">
+<p style="text-align:left;">
+     [<i class="material-icons">fast_rewind</i> Previous Page](deep2.html)
+    <span style="float:right;">
+        [Next Page <i class="material-icons">fast_forward</i>](deep2.html)  
+    </span>
+</p>
 </div>
+
 
 
 <style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'medium'};</script> 
 
-<!-- Markdeep: -->
+<!-- Markdeep: 
 
-<script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>
+<script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script> -->
+
+<script src="markdeep.min.js?" charset="utf-8"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
 
