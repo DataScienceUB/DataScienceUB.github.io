@@ -1,32 +1,19 @@
 <meta charset="utf-8" emacsmode="-*- markdown -*-">
+<link rel="stylesheet" href="apiDSBCN.css">
 <link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/apidoc.css?">
-<link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+<link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
 <head>
 <style>
-details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: .5em .5em 0;
-}
+<style>
+    .material-icons, .icon-text {
+      vertical-align: bottom;
+    }
 
-summary {
-    font-weight: normal;
-    margin: -.5em -.5em 0;
-    padding: .5em;
-}
-
-details[open] {
-    padding: .5em;
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
-}
 </style>
-
-
 </head>
 
 
@@ -37,7 +24,94 @@ Universitat de Barcelona, 2020 <br>
 Jordi Vitrià</p>
 </center>
 
-# Ethical Data Science
+
+<i class="material-icons">home</i>
+<i class="material-icons">search</i>
+<i class="material-icons">input</i>
+<i class="material-icons">delete</i>
+<i class="material-icons">warning</i>
+<i class="material-icons" style="font-size:12px;">arrow_forward</i>
+<i class="material-icons">open_in_new</i>
+<i class="material-icons">schedule</i>
+
+
+
+
+# Desplegables
+
+<details>
+<summary><b>Exercise</b>: 
+Linear Regression with Synthetic Data Colab exercise, which explores linear regression with a toy dataset. [Colab Notebook](https://colab.research.google.com/github/google/eng-edu/blob/master/ml/cc/exercises/linear_regression_with_synthetic_data.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=linear_regression_synthetic_tf2-colab&hl=en).
+</summary>
+
+[Solution](https://colab.research.google.com/github/google/eng-edu/blob/master/ml/cc/exercises/linear_regression_with_synthetic_data.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=linear_regression_synthetic_tf2-colab&hl=en).
+</details>
+
+
+<details>
+<summary><b>Question</b>: Which of the following model's predictions have been affected by selection bias?
+
+<ul>
+  <li>Engineers built a model to predict the likelihood of a person developing diabetes based on their daily food intake. The model was trained on 10,000 "food diaries" collected from a randomly chosen group of people worldwide representing a variety of different age groups, ethnic backgrounds, and genders. However, when the model was deployed, it had very poor accuracy. Engineers subsequently discovered that food diary participants were reluctant to admit the true volume of unhealthy foods they ate, and were more likely to document consumption of nutritious food than less healthy snacks.</li>
+  <li>Engineers built a model to predict the likelihood of a person developing diabetes based on their daily food intake. The model was trained on 10,000 "food diaries" collected from a randomly chosen group of people worldwide representing a variety of different age groups, ethnic backgrounds, and genders. However, when the model was deployed, it had very poor accuracy. Engineers subsequently discovered that food diary participants were reluctant to admit the true volume of unhealthy foods they ate, and were more likely to document consumption of nutritious food than less healthy snacks.</li>
+  <li>Engineers built a model to predict the likelihood of a person developing diabetes based on their daily food intake. The model was trained on 10,000 "food diaries" collected from a randomly chosen group of people worldwide representing a variety of different age groups, ethnic backgrounds, and genders. However, when the model was deployed, it had very poor accuracy. Engineers subsequently discovered that food diary participants were reluctant to admit the true volume of unhealthy foods they ate, and were more likely to document consumption of nutritious food than less healthy snacks.</li>
+</ul>
+
+</summary>
+There is no selection bias in this model; participants who provided training data were a representative sampling of users and were chosen randomly. Instead, this model was affected by reporting bias. Ingestion of unhealthy foods was reported at a much lower frequency than true real-world occurrence.
+</details>
+
+<details>
+<summary><b>Pregunta</b>: Which of the following model's predictions have been affected by selection bias?
+</summary>
+There is no selection bias in this model; participants who provided training data were a representative sampling of users and were chosen randomly. Instead, this model was affected by reporting bias. Ingestion of unhealthy foods was reported at a much lower frequency than true real-world occurrence.
+</details>
+
+
+# Modals
+
+Hola que tal <a onclick="document.getElementById('id01').style.display='block'" href="#myModal">Open Modal</a> anem bé!
+
+
+<!-- Modal -->
+
+<div id="id01" class="w3-modal">
+<div class="w3-modal-content">
+<div class="w3-container">
+<span onclick="document.getElementById('id01').style.display='none'" 
+      conclick=""document.getElementById('id01').style.display='block'"" 
+      lass="w3-button w3-display-topright">&times;
+</span>
+# Hola 
+Una possible implementació de l'exponenciació, $x^y$, pot ser aquesta: 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+def pow(x,y):
+  a = x
+  for i in range(2,y+1):
+    a = a * x
+  return a 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++ Seria **correcte** aquest algorisme?
++ Quina **complexitat** $O(\cdot)$ tindria (suposant que les multiplicacioms tenen $O(1)$)?
+
+
+</div>
+</div>
+</div>
+
+
+<!-- End Modal -->
+
+
+
+
+
+
+
 
 
 ## What is ethics
@@ -238,9 +312,14 @@ And other admonitions:
 The table of contents that Markdeep produces is stuffed on the right side, 
 if the browser window is wide enough. Otherwise it is hidden.
 
-# Tema 2
+<hr>
+<div id="textbox">
+  <p class="alignleft">[Previous Page](deep2.html)</p>
+  <p class="alignright">[Next Page](deep2.html)</p>
+</div>
 
-<style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'short'};</script> 
+
+<style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'medium'};</script> 
 
 <!-- Markdeep: -->
 
